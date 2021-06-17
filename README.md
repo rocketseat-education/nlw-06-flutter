@@ -1,16 +1,63 @@
-# payflowprevious
+# PayFlow
 
-A new Flutter project.
 
-## Getting Started
+# Paleta de cores
 
-This project is a starting point for a Flutter application.
+**Obs:** o dart não interpreta diretamente com #, para utilizar é preciso trocar o # para 0xFF
 
-A few resources to get you started if this is your first Flutter project:
+Para utilizar uma cor no dart basta chamar Color(_inserir_hexadecimal_sem_#)
+```dart
+Color(0xFFFF941A); //Exemplo de uso
+``` 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+| Nome da Cor | Hexadecimal | Dart | Tipo |
+|--|--|--|--|
+| primary |![#f03c15](https://via.placeholder.com/20/FF941A/000000?text=+) #FF941A |0xFFFF941A |Comuns |
+| grey | ![#f03c15](https://via.placeholder.com/20/585666/000000?text=+) #585666| 0xFF585666|Comuns |
+| delete |![#f03c15](https://via.placeholder.com/20/E83F5B/000000?text=+) #E83F5B|0xFFE83F5B |Comuns |
+| heading |![#f03c15](https://via.placeholder.com/20/585666/000000?text=+)#585666| 0xFF585666|Textos |
+| body |![#f03c15](https://via.placeholder.com/20/706E7A/000000?text=+) #706E7A|0xFF706E7A |Textos |
+| stroke |![#f03c15](https://via.placeholder.com/20/E3E3E6/000000?text=+) #E3E3E6|0xFFE3E3E6 |Items |
+| shape |![#f03c15](https://via.placeholder.com/20/FAFAFC/000000?text=+) #FAFAFC|0xFFFAFAFC |Items |
+| background |![#f03c15](https://via.placeholder.com/20/FFFFFF/000000?text=+) #FFFFFF| 0xFFFFFFFF|Items |
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Agora com a paleta de cores no jeito, você precisar criar o arquivo __appcolors.dart__  no seu projeto seguindo o esquema de diretório abaixo:
+
+```
+/lib
+	/shared
+		/themes
+			appcolors.dart
+````
+
+Com o arquivo criado, agora precisamos construir a classe __AppColors__. Para facilitar o processo já deixei a classe implementado abaixo para você copiar e colar no projeto
+
+**Obs:** 
+- Esse arquivo precisa ser criado dentro de /lib/shared/themes/appcolors.dart
+-  Importante lembrar de colocar o import abaixo no início do arquivo para encontrar a classe __Color__
+
+```dart
+import'package:flutter/material.dart'
+```
+Arquivo completo
+
+```dart 
+import  'package:flutter/material.dart';
+
+class AppColors{
+static final primary = Color(0xFFFF941A);
+static final grey = Color(0xFF585666);
+static final delete = Color(0xFF585666);
+static final heading = Color(0xFF585666);
+static final body = Color(0xFF706E7A);
+static final stroke = Color(0xFFE3E3E6);
+static final shape = Color(0xFFFAFAFC);
+static final background = Color(0xFFFFFFFF);
+}
+```
+
+## Utilizando o AppColors
+
+```dart
+final color = AppColors.primary;
+```
