@@ -1,16 +1,23 @@
-# payflowprevious
+# PayFlow
 
-A new Flutter project.
 
-## Getting Started
+# TextStyles
 
-This project is a starting point for a Flutter application.
+| Nome | Font | Size | Weight | Color
+|--|--|--|--|--|
+|titleHome | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png) |32px|600| heading
+| titleRegular | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |20px |400 | background|
+| titleBold | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |20px |600 |heading ou background|
+| titleListTile | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |17px |600 | heading|
+| trailingRegular| ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |16px |400 | heading|
+| trailingBold | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |16px |600 | heading|
+| button | ![title](https://d144mzi0q5mijx.cloudfront.net/img/I/N/Inter.png ) |15px|400| primary, heading, gray ou background
+| buttonBold | ![title](https://d144mzi0q5mijx.cloudfront.net/img/I/N/Inter.png ) |15px|700| heading
+| caption| ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |13px |400 | background, shape ou body|
+| captionBold| ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |13px |600 | background, shape ou body|
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
