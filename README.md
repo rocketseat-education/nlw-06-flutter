@@ -36,7 +36,7 @@ Com o arquivo criado, agora precisamos construir a classe __AppColors__. Para fa
 -  Importante lembrar de colocar o import abaixo no início do arquivo para encontrar a classe __Color__
 
 ```dart
-import'package:flutter/material.dart'
+import 'package:flutter/material.dart';
 ```
 Arquivo completo
 
@@ -175,7 +175,7 @@ color: AppColors.heading,
 static  final buttonGray = GoogleFonts.inter(
 fontSize: 15,
 fontWeight: FontWeight.w400,
-color: AppColors.gray,
+color: AppColors.grey,
 );
 static  final buttonBackground = GoogleFonts.inter(
 fontSize: 15,
@@ -195,7 +195,7 @@ color: AppColors.heading,
 static  final buttonBoldGray = GoogleFonts.inter(
 fontSize: 15,
 fontWeight: FontWeight.w700,
-color: AppColors.gray,
+color: AppColors.grey,
 );
 static  final buttonBoldBackground = GoogleFonts.inter(
 fontSize: 15,
