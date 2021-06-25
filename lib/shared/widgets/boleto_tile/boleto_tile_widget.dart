@@ -1,3 +1,4 @@
+import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
 import 'package:payflow/shared/models/boleto_model.dart';
 import 'package:payflow/shared/themes/app_text_styles.dart';
@@ -8,8 +9,8 @@ class BoletoTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 16),
+    return AnimatedCard(
+      direction: AnimatedCardDirection.right,
       child: ListTile(
         contentPadding: EdgeInsets.zero,
         title: Text(

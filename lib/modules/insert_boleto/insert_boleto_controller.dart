@@ -15,10 +15,18 @@ class InsertBoletoController {
   String? validateCodigo(String? value) =>
       value?.isEmpty ?? true ? "O código do boleto não pode ser vazio" : null;
 
-  void onChange(
-      {String? name, String? dueDate, double? value, String? barcode}) {
+  void onChange({
+    String? name,
+    String? dueDate,
+    double? value,
+    String? barcode,
+  }) {
     model = model.copyWith(
-        name: name, dueDate: dueDate, value: value, barcode: barcode);
+      name: name,
+      dueDate: dueDate,
+      value: value,
+      barcode: barcode,
+    );
   }
 
   Future<void> saveBoleto() async {
@@ -29,7 +37,7 @@ class InsertBoletoController {
     return;
   }
 
-  Future<void> cadastrar() async {
+  Future<void> cadastrarBoleto() async {
     final form = formKey.currentState;
     if (form!.validate()) {
       return await saveBoleto();
