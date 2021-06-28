@@ -40,11 +40,10 @@ class BarcodeScannerController {
         barcode = item.value.displayValue;
       }
 
-      if (barcode != null && status.barcode.isEmpty) {
+      if (barcode != null && status.barcode.isEmpty)
+        /// When you get the barcode the user will be directed to the [InsertBoletoPage].
+        /// This controller will be disposing.
         status = BarcodeScannerStatus.barcode(barcode);
-        cameraController!.dispose();
-        await barcodeScanner.close();
-      }
 
       return;
     } catch (e) {
@@ -108,12 +107,11 @@ class BarcodeScannerController {
         }
       });
   }
-
-  void dispose() {
+  
+  /// Clean the controller to prevent memory leakage.
+  void dispose() async {
     statusNotifier.dispose();
-    barcodeScanner.close();
-    if (status.showCamera) {
-      cameraController!.dispose();
-    }
+    await barcodeScanner.close();
+    cameraController?.dispose();
   }
 }
